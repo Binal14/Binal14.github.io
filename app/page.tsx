@@ -21,8 +21,8 @@ const copy = {
     proof: [
       ["2+ years", "Production development"],
       ["1M+", "Migration records validated"],
-      ["4", "External systems integrated"],
-      ["99.2%", "Maintenance model accuracy"],
+      ["Integrations", "Bill.com · Clover · QuickBooks · Salesforce · ClickUp · Shopify"],
+      ["ERP delivery", "Accounting · CRM · Manufacturing · Reporting"],
     ],
     aboutKicker: "01 · About",
     aboutTitle: "Engineering depth. Analytical perspective.",
@@ -34,7 +34,7 @@ const copy = {
     pathB: "Python & ERP Engineering",
     pathBText:
       "Odoo modules, REST integrations, accounting workflows, migrations, automated testing, OWL.js, QWeb, and production support.",
-    workKicker: "02 · Selected work",
+    workKicker: "02 · Impactful work",
     workTitle: "From raw records to useful outcomes.",
     workLead:
       "A selection of professional and independent work across machine learning, analytics, ERP, and integrations.",
@@ -53,7 +53,7 @@ const copy = {
     traineeText:
       "Built a foundation in Python backend development, SQL data handling, Odoo workflows, testing, debugging, and live-project support.",
     skillKicker: "04 · Capabilities",
-    skillTitle: "A practical, end-to-end toolkit.",
+    skillTitle: "Technical expertise across data and business systems.",
     education: "Education",
     edu1: "M.Sc. Data Science · TU Dortmund University · 2026–present",
     edu2: "B.E. Computer Engineering · Government Engineering College, Rajkot · 2020–2024",
@@ -66,7 +66,7 @@ const copy = {
     email: "Email me",
     linkedin: "LinkedIn",
     github: "GitHub",
-    footer: "Designed around data, systems, and measurable outcomes.",
+    footer: "Binal Dave · Dortmund, Germany · Open to working-student opportunities",
   },
   de: {
     nav: ["Über mich", "Projekte", "Erfahrung", "Kompetenzen", "Kontakt"],
@@ -84,8 +84,8 @@ const copy = {
     proof: [
       ["2+ Jahre", "Produktive Entwicklung"],
       ["1 Mio.+", "Validierte Migrationsdatensätze"],
-      ["4", "Integrierte externe Systeme"],
-      ["99,2 %", "Genauigkeit des Wartungsmodells"],
+      ["Integrationen", "Bill.com · Clover · QuickBooks · Salesforce · ClickUp · Shopify"],
+      ["ERP-Projekte", "Accounting · CRM · Manufacturing · Reporting"],
     ],
     aboutKicker: "01 · Über mich",
     aboutTitle: "Technische Tiefe. Analytische Perspektive.",
@@ -97,7 +97,7 @@ const copy = {
     pathB: "Python- & ERP-Engineering",
     pathBText:
       "Odoo-Module, REST-Integrationen, Accounting-Workflows, Migrationen, automatisierte Tests, OWL.js, QWeb und Production Support.",
-    workKicker: "02 · Ausgewählte Projekte",
+    workKicker: "02 · Wirkungsvolle Projekte",
     workTitle: "Von Rohdaten zu konkretem Nutzen.",
     workLead:
       "Eine Auswahl professioneller und eigener Arbeiten aus Machine Learning, Analytics, ERP und Systemintegration.",
@@ -116,7 +116,7 @@ const copy = {
     traineeText:
       "Grundlagen in Python-Backend-Entwicklung, SQL-Datenverarbeitung, Odoo-Workflows, Tests, Debugging und Support für Live-Projekte aufgebaut.",
     skillKicker: "04 · Kompetenzen",
-    skillTitle: "Ein praxisnahes End-to-End-Toolkit.",
+    skillTitle: "Technische Kompetenz für Daten und Geschäftssysteme.",
     education: "Ausbildung",
     edu1: "M.Sc. Data Science · TU Dortmund University · 2026–heute",
     edu2: "B.E. Computer Engineering · Government Engineering College, Rajkot · 2020–2024",
@@ -129,7 +129,7 @@ const copy = {
     email: "E-Mail senden",
     linkedin: "LinkedIn",
     github: "GitHub",
-    footer: "Entwickelt rund um Daten, Systeme und messbare Ergebnisse.",
+    footer: "Binal Dave · Dortmund · Offen für Werkstudentenstellen",
   },
 };
 
@@ -174,7 +174,7 @@ const projects = {
       type: "Platform engineering · Professional",
       title: "Reusable Multi-System Integrations",
       text: "Built reusable mapping, transformation, validation, and error-handling components for finance and operations platforms.",
-      impact: "Integrated Bill.com, ClickUp, Clover, and QuickBooks",
+      impact: "Reusable integration layer for finance and operations workflows",
       tags: ["REST APIs", "Python", "Multi-tenant", "ETL", "Automation"],
     },
   ],
@@ -218,7 +218,7 @@ const projects = {
       type: "Platform Engineering · Beruflich",
       title: "Wiederverwendbare Systemintegrationen",
       text: "Komponenten für Mapping, Transformation, Validierung und Fehlerbehandlung zwischen Finanz- und Operationssystemen entwickelt.",
-      impact: "Bill.com, ClickUp, Clover und QuickBooks integriert",
+      impact: "Wiederverwendbare Integrationsschicht für Finanz- und Operationsprozesse",
       tags: ["REST APIs", "Python", "Multi-tenant", "ETL", "Automation"],
     },
   ],
@@ -244,7 +244,7 @@ export default function Home() {
   return (
     <main>
       <header className="nav-shell">
-        <a className="brand" href="#top" aria-label="Binal Dave home">BD<span>.</span></a>
+        <a className="brand" href="#top" aria-label="Binal Dave home">Binal Dave</a>
         <nav aria-label="Primary navigation">
           {["about", "work", "experience", "skills", "contact"].map((id, i) => (
             <a key={id} href={`#${id}`}>{t.nav[i]}</a>
@@ -266,10 +266,13 @@ export default function Home() {
               <a className="button secondary" href="/Binal_Dave_CV.pdf" download>{t.download} <span>↓</span></a>
             </div>
           </div>
-          <aside className="availability">
-            <span className="signal" />
-            <p>{t.status}</p>
-            <small>{t.based}</small>
+          <aside className="hero-profile">
+            <div className="portrait-frame"><img src="/binal-dave.jpeg" alt="Binal Dave at TU Dortmund University" /></div>
+            <div className="availability">
+              <span className="signal" />
+              <p>{t.status}</p>
+              <small>{t.based}</small>
+            </div>
           </aside>
         </div>
         <div className="proof-grid">
@@ -350,8 +353,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer><a className="brand" href="#top">BD<span>.</span></a><p>{t.footer}</p><span>© 2026</span></footer>
+      <footer><a className="brand" href="#top">Binal Dave</a><p>{t.footer}</p><span>© 2026</span></footer>
     </main>
   );
 }
-
