@@ -53,12 +53,16 @@ const copy = {
     traineeText:
       "Built a foundation in Python backend development, SQL data handling, Odoo workflows, testing, debugging and support for live projects.",
     skillKicker: "04 · Capabilities",
-    skillTitle: "Technical skills across data, AI and software engineering.",
+    skillTitle:
+      "Technical skills across data, AI and software engineering.",
     education: "Education",
-    edu1: "M.Sc. Data Science · TU Dortmund University · 2026–2028 (expected)",
-    edu2: "B.E. Computer Engineering · Government Engineering College, Rajkot · 2020–2024",
+    edu1:
+      "M.Sc. Data Science · TU Dortmund University · 2026–2028 (expected)",
+    edu2:
+      "B.E. Computer Engineering · Government Engineering College, Rajkot · 2020–2024",
     language: "Languages",
-    langText: "English C1 · German A2 (actively learning) · Gujarati native",
+    langText:
+      "English C1 · German A2 (actively learning) · Gujarati native",
     contactKicker: "05 · Contact",
     contactTitle: "Let’s build something useful.",
     contactText:
@@ -121,7 +125,8 @@ const copy = {
     skillTitle:
       "Technische Kompetenz für Daten, KI und Softwareentwicklung.",
     education: "Ausbildung",
-    edu1: "M.Sc. Data Science · TU Dortmund University · 2026–2028 (voraussichtlich)",
+    edu1:
+      "M.Sc. Data Science · TU Dortmund University · 2026–2028 (voraussichtlich)",
     edu2:
       "B.E. Computer Engineering · Government Engineering College, Rajkot · 2020–2024",
     language: "Sprachen",
@@ -427,11 +432,14 @@ export default function Home() {
             <p className="eyebrow">{t.eyebrow}</p>
 
             <h1>
-              {t.headlineA} <em>{t.headlineB}</em>{" "}
+              {t.headlineA}{" "}
+              <em>{t.headlineB}</em>{" "}
               {t.headlineC}
             </h1>
 
-            <p className="hero-intro">{t.intro}</p>
+            <p className="hero-intro">
+              {t.intro}
+            </p>
 
             <div className="hero-actions">
               <a
@@ -443,7 +451,7 @@ export default function Home() {
 
               <a
                 className="button secondary"
-                href="/Binal_Dave_CV.pdf"
+                href="/Binal_Dave%20-%20CV.pdf"
                 download
               >
                 {t.download} <span>↓</span>
@@ -471,7 +479,10 @@ export default function Home() {
 
         <div className="proof-grid">
           {t.proof.map(([value, label]) => (
-            <div className="proof" key={label}>
+            <div
+              className="proof"
+              key={label}
+            >
               <strong>{value}</strong>
               <span>{label}</span>
             </div>
@@ -479,9 +490,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="about">
+      <section
+        className="section"
+        id="about"
+      >
         <div className="section-intro">
-          <p className="kicker">{t.aboutKicker}</p>
+          <p className="kicker">
+            {t.aboutKicker}
+          </p>
 
           <h2>{t.aboutTitle}</h2>
 
@@ -490,7 +506,9 @@ export default function Home() {
 
         <div className="dual-path">
           <article>
-            <span className="path-icon">DS</span>
+            <span className="path-icon">
+              DS
+            </span>
 
             <h3>{t.pathA}</h3>
 
@@ -498,7 +516,9 @@ export default function Home() {
           </article>
 
           <article>
-            <span className="path-icon">PE</span>
+            <span className="path-icon">
+              PE
+            </span>
 
             <h3>{t.pathB}</h3>
 
@@ -513,7 +533,9 @@ export default function Home() {
       >
         <div className="section-intro horizontal">
           <div>
-            <p className="kicker">{t.workKicker}</p>
+            <p className="kicker">
+              {t.workKicker}
+            </p>
 
             <h2>{t.workTitle}</h2>
           </div>
@@ -547,14 +569,21 @@ export default function Home() {
 
               <div className="tags">
                 {p.tags.map((tag) => (
-                  <span key={tag}>{tag}</span>
+                  <span key={tag}>
+                    {tag}
+                  </span>
                 ))}
               </div>
 
               <a
-                href={p.url || "#experience"}
+                href={
+                  p.url ||
+                  "#experience"
+                }
                 target={
-                  p.url ? "_blank" : undefined
+                  p.url
+                    ? "_blank"
+                    : undefined
                 }
                 rel={
                   p.url
@@ -632,17 +661,22 @@ export default function Home() {
         </div>
 
         <div className="skill-list">
-          {skills.map(([name, items], i) => (
-            <div key={name}>
-              <span>
-                {String(i + 1).padStart(2, "0")}
-              </span>
+          {skills.map(
+            ([name, items], i) => (
+              <div key={name}>
+                <span>
+                  {String(i + 1).padStart(
+                    2,
+                    "0"
+                  )}
+                </span>
 
-              <h3>{name}</h3>
+                <h3>{name}</h3>
 
-              <p>{items}</p>
-            </div>
-          ))}
+                <p>{items}</p>
+              </div>
+            )
+          )}
         </div>
 
         <div className="education-grid">
