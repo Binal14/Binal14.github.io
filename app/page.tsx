@@ -180,28 +180,11 @@ const projects = {
         "FastAPI",
         "Docker",
       ],
-      url: "https://github.com/Binal14",
+      url: "https://github.com/Binal14/industrial-maintenance-rag",
     },
 
     {
       n: "03",
-      type: "Statistical modelling · Public",
-      title: "BayesFlow & HMM Protein Structure Inference",
-      text:
-        "A simulation-based inference project combining Hidden Markov Models with neural approximation to investigate protein secondary structure.",
-      impact: "Real-data F1 0.503 · Accuracy 72.43%",
-      tags: [
-        "Python",
-        "HMM",
-        "BayesFlow",
-        "SBI",
-        "Statistical modelling",
-      ],
-      url: "https://github.com/Binal14",
-    },
-
-    {
-      n: "04",
       type: "CRM analytics · Professional",
       title: "Lead Prediction & Revenue Forecasting",
       text:
@@ -218,7 +201,7 @@ const projects = {
     },
 
     {
-      n: "05",
+      n: "04",
       type: "Data migration · Professional",
       title: "NetSuite to Odoo Migration Assurance",
       text:
@@ -234,7 +217,7 @@ const projects = {
     },
 
     {
-      n: "06",
+      n: "05",
       type: "Integration engineering · Professional",
       title: "Multi-System API & Automation Integrations",
       text:
@@ -289,25 +272,9 @@ const projects = {
       url: "https://github.com/Binal14/industrial-maintenance-rag",
     },
 
-    {
-      n: "03",
-      type: "Statistische Modellierung · Öffentlich",
-      title: "BayesFlow & HMM Protein Structure Inference",
-      text:
-        "Ein Projekt zur simulationsbasierten Inferenz, das Hidden Markov Models mit neuronaler Approximation zur Untersuchung von Protein-Sekundärstrukturen kombiniert.",
-      impact: "F1 auf realen Daten 0,503 · Accuracy 72,43 %",
-      tags: [
-        "Python",
-        "HMM",
-        "BayesFlow",
-        "SBI",
-        "Statistische Modellierung",
-      ],
-      url: "https://github.com/Binal14",
-    },
 
     {
-      n: "04",
+      n: "03",
       type: "CRM Analytics · Beruflich",
       title: "Lead Prediction & Revenue Forecasting",
       text:
@@ -324,7 +291,7 @@ const projects = {
     },
 
     {
-      n: "05",
+      n: "04",
       type: "Datenmigration · Beruflich",
       title: "NetSuite-zu-Odoo Migration Assurance",
       text:
@@ -340,7 +307,7 @@ const projects = {
     },
 
     {
-      n: "06",
+      n: "05",
       type: "Integrationsentwicklung · Beruflich",
       title: "Multi-System API & Automation Integrations",
       text:
