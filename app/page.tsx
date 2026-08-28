@@ -286,7 +286,7 @@ const projects = {
         "FastAPI",
         "Docker",
       ],
-      url: "https://github.com/Binal14",
+      url: "https://github.com/Binal14/industrial-maintenance-rag",
     },
 
     {
@@ -451,7 +451,7 @@ export default function Home() {
 
               <a
                 className="button secondary"
-                href="/Binal_Dave%20-%20CV.pdf"
+                href="/Binal_Dave_CV.pdf"
                 download
               >
                 {t.download} <span>↓</span>
